@@ -9,6 +9,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 test("public repository contains the required governance files", () => {
   for (const relative of [
     "README.md",
+    "README.en.md",
     "LICENSE",
     "SECURITY.md",
     "CONTRIBUTING.md",
@@ -21,7 +22,9 @@ test("public repository contains the required governance files", () => {
 
 test("README documents every bridge command", () => {
   const readme = fs.readFileSync(path.join(ROOT, "README.md"), "utf8");
+  const english = fs.readFileSync(path.join(ROOT, "README.en.md"), "utf8");
   for (const command of ["/help", "/pair", "/invite", "/new", "/status", "/stop"]) {
     assert.match(readme, new RegExp(command.replace("/", "\\/")));
+    assert.match(english, new RegExp(command.replace("/", "\\/")));
   }
 });
