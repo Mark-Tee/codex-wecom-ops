@@ -1,0 +1,28 @@
+{
+  "wecom": {
+    "wsUrl": "wss://openws.work.weixin.qq.com",
+    "ackTimeoutMs": 15000
+  },
+  "codex": {
+    "workdir": "/path/to/workspace",
+    "executable": "codex",
+    "sandbox": "workspace-write",
+    "approvalPolicy": "never",
+    "networkAccess": false,
+    "ignoreUserConfig": true,
+    "maxSeconds": 300,
+    "additionalWritableRoots": [],
+    "inheritedEnv": []
+  },
+  "security": {
+    "allowedUserIds": [],
+    "requirePairing": true,
+    "maxQueue": 3,
+    "maxPromptChars": 12000
+  },
+  "stateDir": "./data",
+  "health": {
+    "host": "127.0.0.1",
+    "port": 8799
+  }
+}

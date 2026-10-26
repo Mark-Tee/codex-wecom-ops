@@ -1,0 +1,24 @@
+{
+  "name": "codex-wecom-ops",
+  "version": "0.1.0",
+  "description": "Self-hosted WeCom-to-Codex bridge with pairing, queues, and streaming replies",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/main.mjs",
+    "test": "node --test",
+    "check": "node --check src/main.mjs"
+  },
+  "keywords": [
+    "codex",
+    "wecom",
+    "wechat-work",
+    "enterprise",
+    "bridge",
+    "self-hosted"
+  ],
+  "license": "MIT"
+}

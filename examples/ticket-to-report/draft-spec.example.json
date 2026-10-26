@@ -1,0 +1,16 @@
+{
+  "needsClarification": false,
+  "clarificationQuestion": "",
+  "facts": [
+    "Ticket EXAMPLE-1042 was received at 2026-01-15 09:20.",
+    "A failed power module in rack A3 was replaced and power was restored."
+  ],
+  "inferences": [],
+  "weeklyRow": [],
+  "handoverRow": [],
+  "source": {
+    "ticketId": "EXAMPLE-1042",
+    "receivedAt": "2026-01-15T09:20:00",
+    "operator": "OPERATOR_A"
+  }
+}
