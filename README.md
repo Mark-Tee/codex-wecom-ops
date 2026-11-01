@@ -162,3 +162,7 @@ npm run check
 ## 许可证
 
 MIT，详见 [LICENSE](LICENSE)。
+
+## 项目续接
+
+[项目交接与验证状态](docs/PROJECT_STATUS.md)：关键规则、已知限制与后续验证。
