@@ -83,3 +83,9 @@ test("uses an environment allowlist and preserves explicit opt-ins", () => {
   assert.equal(environment.GITHUB_TOKEN, undefined);
   assert.equal(environment.UNRELATED_SECRET, undefined);
 });
+
+test("resume never receives the exec-only color option", () => {
+  const config={codex:{workdir:process.cwd(),ignoreUserConfig:true,sandbox:"workspace-write",approvalPolicy:"never",networkAccess:false,additionalWritableRoots:[]}};
+  const args=buildCodexArgs({config,prompt:"fixture",threadId:"fixture-thread"});
+  assert.equal(args.includes("--color"),false);
+});
