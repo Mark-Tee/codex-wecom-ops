@@ -39,7 +39,7 @@ export function resolveCodexExecutable(configured) {
 
 export function buildCodexArgs({ config, prompt, threadId = "" }) {
   const args = threadId
-    ? ["exec", "resume", threadId, "--skip-git-repo-check", "--color", "never"]
+    ? ["exec", "resume", threadId, "--skip-git-repo-check"]
     : ["exec", "-C", config.codex.workdir, "--skip-git-repo-check", "--color", "never"];
 
   if (config.codex.ignoreUserConfig) args.push("--ignore-user-config");

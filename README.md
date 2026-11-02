@@ -166,3 +166,7 @@ MIT，详见 [LICENSE](LICENSE)。
 ## 项目续接
 
 [项目交接与验证状态](docs/PROJECT_STATUS.md)：关键规则、已知限制与后续验证。
+
+## Codex CLI 续聊兼容
+
+`exec resume` 不再传入仅首次 `exec` 使用的 `--color` 参数。已在 Codex CLI `0.166.0-alpha.5.1` 上用 `--help` 验证参数解析，不调用模型；`npm test` 包含该参数分支回归。
